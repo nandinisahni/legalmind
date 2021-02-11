@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Legal Mind</title>
+  <link rel="canonical" href="self.html" />
+  <meta name="viewport" content="width=device-width" />
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+
+
+  <script>
+
+    function validateForm() {
+      var fn = document.forms["entryform"]["firstname"];
+      var ln = document.forms["entryform"]["lastname"];
+      var el = document.forms["entryform"]["email"];
+
+      if (fn.value == "") {
+        window.alert("Please enter your first name.");
+        fn.focus();
+        return false;
+      }
+      else if (ln.value == "") {
+        window.alert("Please enter your last name.");
+        ln.focus();
+        return false;
+      }
+      else if (el.value == "") {
+        window.alert("Please enter your email.");
+        el.focus();
+        return false;
+      }
+      return true;
+    }
+
+
+  </script>
+  <style amp-custom>
+    .heading {
+      position: relative;
+      font-family: sans-serif;
+      font-size: 50px;
+      padding-top: 70px;
+      font-weight: bolder;
+
+    }
+     body{
+      margin:0;
+      padding:0;
+     }
+
+    .home {
+      padding: 0px 0 90px 0;
+      background-color: rgb(46, 46, 184);
+      color: white;
+      transition: 700ms;
+      font-family: sans-serif;
+    }
+
+
+
+    .main,
+    .entry {}
+
+    /* .row-end {
+      padding-top: 35px;
+
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: repeat(4,1fr);
+
+    } */
+
+    .row-end {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .column-end {
+      padding-top: 30px;
+      padding-left: 20px;
+    }
+
+
+    .logo {
+
+      border-radius: 30px;
+      padding: 0px 0px 0px 0px;
+      width: auto;
+      background-color: rgb(51, 51, 204);
+      box-sizing: border-box;
+      margin-left: 90px;
+      box-shadow: rgb(51, 51, 204);
+    }
+
+
+    .bttnContainer {
+      padding-top: 20px;
+      height: 50px;
+      width: auto;
+      display: inline-flex;
+    }
+
+    .res {
+      padding-left: 10px;
+
+    }
+
+    .end {
+      padding: 0 0 40px 0;
+    }
+
+    .featured {
+      font-family: sans-serif;
+      color: blue;
+      font-size: 35px;
+    }
+
+    .text_field_inline_left {
+      display: inline-block;
+      
+
+
+    }
+
+    .text_field_inline_left input {
+      max-width: 250px;
+      border-radius: 10px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+
+      font-size: 15px;
+    }
+
+    .text_field_inline_right {
+      display: inline-block;
+    }
+
+    .text_field_inline_right input {
+      max-width: 250px;
+      border-radius: 10px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+
+      font-size: 15px;
+    }
+
+    form .text_field_container {
+      position: relative;
+      margin: 20px auto;
+    }
+
+
+    form .text_field {
+      position: relative;
+      margin: 20px 0;
+      clear: both;
+    }
+
+
+    .text_field input  {
+      max-width: 500px;
+      width: 90%;
+      border-radius: 10px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+
+    .featured-in {
+      padding-top: 20px;
+      color: blue;
+      font-weight: bold;
+      font-size: x-large;
+
+    }
+
+
+    .sub input,
+    .res input {
+      width: 110%;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+
+    }
+
+    .sub input:active {
+      background-color: darkblue;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .res input:active {
+      background-color: darkblue;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+
+    }
+
+    .imgtag {
+      width: 150px;
+      height: 50px;
+      margin-left: 20px;
+
+    }
+
+    .res {
+      padding-left: 40px;
+    }
+
+    .log {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .items {
+
+      margin-bottom: 24px;
+
+    }
+
+    .rights {
+      margin-top: 70px;
+      color: rgb(0, 0, 77);
+      text-align: center;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .row_end {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25px)) 1fr;
+      }
+  .text_field_inline_left input,.text_field_inline_right input,.text_field input{
+    width: 100%;
+    padding: 5px 10px;
+  }
+  
+  .form {
+    margin-top: 10px;
+  }
+}
+  
+   @media (max-width: 500px){
+    .text_field{
+      display: inline-block;
+      margin: 0px;
+      position: initial;
+    }
+    .text_field_inline_left{
+      margin-bottom: 20px;
+    }
+   }
+
+
+     
+    }
+  </style>
+</head>
+
+<body>
+  <div class="home">
+    <div class="main">
+      <div class="container">
+        <div class="logo">
+          <!--<img src="https://blog.legalmind.tech/content/images/2020/09/lm_logo_with_text-copy.png" alt="logo"
+              width="250" height="60">-->
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/b477ff7c7d6ceb0409c7777a9d58ec38f358b8ef/6219d/assets/images/logo-single.png"
+            alt="LegalMind Logo" style="height: 50px; width : 50px; vertical-align: middle; line-height: 200px">
+
+          <div style="height : auto ; width : auto; vertical-align: middle; display: inline-block;"><span
+              style="line-height: 60px; font-size: 2em; font-weight: 600; color : white">LegalMind<sup
+                style="font-weight:350; ">TM</sup></span></div>
+        </div>
+
+      </div>
+
+      <center>
+        <div class="row">
+          <div class="heading">Redifine legal research with <br> AI</div><br><br>
+          <div class="small ">Use proprietary algorithms to find the most influential insights and the strongest
+            authorities to cite.</div><br>
+          <div class="small_heading">Trusted by <strong>730+</strong>> legal professionals in India</div>
+        </div>
+    </div>
+    </center>
+    <div class="entry">
+      <div class="container">
+        <div class="row">
+          <center>
+            <div class="form">
+              <form name="entryform" method="post" action="/submit.php" onsubmit=" return validateForm()">
+                <div class="text_field_container">
+                  <div class="text_field_inline_left">
+                    <input type="text" name="firstname" size="30" placeholder="First Name">
+                  </div>
+                  <div class="text_field_inline_right">
+                    <input type="text" name="lastname" size="30" placeholder="Last Name">
+                  </div>
+                  <div class="text_field">
+                    <input type="text" name="email" size="30" placeholder="Email">
+                  </div>
+                </div>
+                <div class="notice">🔒 We'll never share your email with anyone else.</div>
+                <div class="bttnContainer">
+                  <div class="sub">
+                    <input type="submit" value="Submit">
+                  </div>
+                  <div class="res">
+                    <input type="reset" value="Reset">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="end">
+    <center>
+      <div class="featured-in">Featured In</div>
+    </center>
+    <div class="row-end">
+      <div class="column-end">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/3e7d5ad4318dd7fc5c15e0d8abb47d190afafb0a/7e588/assets/images/businesstoday.png"
+          alt="businesstoday" class="imgtag" />
+      </div>
+      <div class="column-end">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/2613f61355e4314f3bff75fb0fb5ec9b97aaa1a3/a68bb/assets/images/lawcom.png"
+          alt="lawcom" class="imgtag" />
+      </div>
+      <div class="column-end">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/09ebee79b120fe697724f631f1bfe13f4607d13e/06d3d/assets/images/parambh.png"
+          alt="parambh" class="imgtag" />
+      </div>
+      <div class="column-end">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/73e57344c30a5611733186bc8733fa96dde1a842/2f91f/assets/images/barandbench.png"
+          alt="barandbench" class="imgtag" />
+      </div>
+    </div>
+
+    <div class="rights">
+      <p> © 2020 MindFind Analytics Pvt.Ltd.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
