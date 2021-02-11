@@ -1,5 +1,5 @@
 # legalmind
+![alt text](https://github.com/nandinisahni/legalmind/blob/main/Screenshot%20(381).png)
 ![alt text]()
-![alt text](https://github.com/vanshbhasin157/Captioner/blob/master/captioner1.jpeg)
-![alt text](https://github.com/vanshbhasin157/Captioner/blob/master/captioner1.jpeg)
-![alt text](https://github.com/vanshbhasin157/Captioner/blob/master/captioner1.jpeg)
+![alt text]()
+![alt text])
